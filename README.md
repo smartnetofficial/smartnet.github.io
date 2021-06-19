@@ -1,2 +1,2 @@
 # smartnet.github.io
-smaretnet.com.ge 
+smaretnet.com.ge  ოფიციალური ვებ გვერდი
