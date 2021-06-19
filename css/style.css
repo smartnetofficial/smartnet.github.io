@@ -1,0 +1,167 @@
+@import "fonts.css";
+
+:root {
+--navbar-height: 56px;
+}
+
+body {
+padding-top: var(--navbar-height);
+font-size: 13px;
+display: flex;
+flex-direction: column;
+
+font-family: "MarkGEO-Regular";
+}
+
+.carousel-fade .carousel-inner .item {
+opacity: 0;
+-webkit-transition-property: opacity;
+-moz-transition-property: opacity;
+-o-transition-property: opacity;
+transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+left: 0;
+opacity: 0;
+z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+opacity: 1;
+}
+.carousel-fade .carousel-control {
+z-index: 2;
+}
+
+label {
+padding: 0px 0px 7px 0px;
+}
+
+input {
+
+font-size: 13px !important;
+
+padding: 10px !important;
+
+}
+
+textarea {
+font-size: 13px !important;
+padding: 15px !important;
+
+}
+
+.carousel-caption {
+background: rgba(0, 0, 0, 0.35);
+}
+
+img {
+height: 350px; 
+object-fit: cover;
+}
+.jumbotron-block {
+min-height: calc(100vh - var(--navbar-height));
+flex-grow: 1;
+background-image: url("");
+background-size: cover;
+}
+
+.jumbotron-block__body {
+background-color: rgba(255, 255, 255, .75);
+}
+
+.indent {
+text-indent: 0rem;
+}
+
+button {
+font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn {
+font-family: "MarkGEOCAPSBold";
+font-size: 13px;
+}
+
+.navbar {
+font-family: "MarkGEOCAPSLight";
+}
+
+.navbar-brand {
+font-family: "MarkGEOBold";
+}
+
+.section-block {
+margin-top: 1rem;
+}
+
+#products {
+min-height: 0px;
+}
+
+
+
+.navbar-custom {
+    background-color:#fff;
+    color: rgba(0,0,0,.9);
+    border-radius:0;
+    min-height:65px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+
+ .nav a{
+            color: white !important;
+            font-size: 1.8em !important;
+        }
+  
+.navbar-custom .navbar-nav > li > a {
+    color: rgba(0,0,0,.9);}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: rgba(0,0,0,.9);    background-color:transparent;
+}
+      
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    background-color: #fff;
+}
+     
+.navbar-custom .navbar-brand {
+    color: rgba(0,0,0,.9);
+  }
+.navbar-custom .navbar-toggle {
+    background-color:#fff;
+}
+.navbar-custom .icon-bar {
+    background-color:#fff;
+}
+.section-block__title {
+margin-top: calc(var(--navbar-height) + 1rem);
+margin-bottom: 1rem;
+font-size: 22px;
+}
+
+.section-block__content {
+margin-bottom: 1.5rem;
+}
+
+.footer-block {
+padding-top: 1rem;
+padding-bottom: 1rem;
+color: var(--light);
+background-color: var(--dark);
+}
